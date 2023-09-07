@@ -243,9 +243,11 @@ h2 {
 .form.form--loan {
   grid-template-columns: 2.5fr 1fr 2.5fr;
 }
+
 .form__label--loan {
   grid-row: 2;
 }
+
 /* End exceptions */
 
 .form__input {
@@ -295,21 +297,23 @@ h2 {
 .timer {
   font-weight: 600;
 }
+
 @media only screen and (max-width: 600px) {
   .app {
-    gap: 1rem;
-    max-width: 50rem;
-    grid-template-rows: auto repeat(3, 15rem) auto;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
   }
+
   .logo {
     height: 2.25rem;
   }
+
   .welcome {
     margin-left: 4px;
     font-size: 1.5rem;
     font-weight: 500;
   }
+
   .login__input {
     width: 7rem;
     border-radius: 7rem;
@@ -317,21 +321,27 @@ h2 {
     padding: 0.4rem 1.3rem;
     font-size: 0.9rem;
   }
+
   .login__btn {
     font-size: 1.4rem;
   }
+
   .balance__label {
     font-size: 1.2rem;
   }
+
   .balance__date {
     font-size: 0.7rem;
   }
+
   .balance__value {
     font-size: 0.9rem;
   }
+
   .movements__date {
     font-size: 0.6rem;
   }
+
   .movements__value {
     font-size: 1.1rem;
   }
@@ -342,43 +352,56 @@ h2 {
     border-radius: 0.5rem;
     margin-right: 1rem;
   }
+
   .logout-timer {
     padding: 0 0.3rem;
     margin-top: 2.9rem;
     font-size: 1.1rem;
   }
+
   .summary__label {
     font-size: 0.9rem;
     margin-right: 0.8rem;
+  }
+
+  .movements {
+    width: 100%;
   }
 
   .summary__value {
     font-size: 1rem;
     margin-right: 3.5rem;
   }
+
   .form__input {
     font-size: 1rem;
     padding: 0.1rem 0.6rem;
     border-radius: 0.5rem;
   }
+
   .form__btn {
     border-radius: 0.3rem;
     font-size: 1rem;
   }
+
   .form__label {
     font-size: 0.5rem;
   }
+
   h2 {
     margin-bottom: 1.8rem;
     font-size: 0.7rem;
   }
+
   .operation {
     border-radius: 0.5rem;
     padding: 0.5rem 1.6rem;
   }
+
   .btn--sort {
     font-size: 1rem;
   }
+
   .movements {
     grid-row: 1fr;
     display: flex;
@@ -387,5 +410,9 @@ h2 {
 
   .movements__row {
     flex-basis: 30%;
+  }
+
+  .summary {
+    display: block;
   }
 }
